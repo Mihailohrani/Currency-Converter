@@ -34,7 +34,7 @@ public class CurrencyConverterGUI extends JFrame {
     JButton convertButton = new JButton("Convert");
     resultLabel = new JLabel("Converted Amount: ");
 
-    convertButton.addActionListener(_ -> {
+    convertButton.addActionListener(e -> {
       double amount;
       try {
         amount = Double.parseDouble(amountField.getText());
